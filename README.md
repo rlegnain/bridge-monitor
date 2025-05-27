@@ -4,12 +4,6 @@ A hands-on demo of a production-grade streaming ETL pipeline using Databricks De
 
 ---
 
-## Unity Catalog Structure
-- Create a managed catalog called `bridge_monitoring`
-- Create schemas in the catßalog called `00_landing`, `01_bronze`, `02_silver` and `03_gold`
-- Create a managed volume in the `00_landing` schema called `streaming`
-- In the `streaming` volume create three subdirectories called `bridge_temperature`, `bridge_vibration` and `bridge_tilt`
-
 ## Repository Structure
 
 - **00_data_generator.ipynb**  
@@ -39,6 +33,14 @@ A hands-on demo of a production-grade streaming ETL pipeline using Databricks De
 - Databricks workspace with Unity Catalog enabled  
 - A cluster running a Databricks Runtime compatible with DLT  
 - Python 3.8+ and PySpark dependencies 
+
+---
+
+## Unity Catalog Structure
+- Create a managed catalog called `bridge_monitoring`
+- Create schemas in the catßalog called `00_landing`, `01_bronze`, `02_silver` and `03_gold`
+- Create a managed volume in the `00_landing` schema called `streaming`
+- In the `streaming` volume create three subdirectories called `bridge_temperature`, `bridge_vibration` and `bridge_tilt`
 
 ---
 
