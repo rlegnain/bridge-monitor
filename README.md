@@ -4,6 +4,12 @@ A hands-on demo of a production-grade streaming ETL pipeline using Databricks De
 
 ---
 
+## Unity Catalog Structure
+- Create a managed catalog called `bridge_monitoring`
+- Create schemas in the catßalog called `00_landing`, `01_bronze`, `02_silver` and `03_gold`
+- Create a managed volume in the `00_landing` schema called `streaming`
+- In the `streaming` volume create three subdirectories called `bridge_temperature`, `bridge_vibration` and `bridge_tilt`
+
 ## Repository Structure
 
 - **00_data_generator.ipynb**  
