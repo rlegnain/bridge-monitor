@@ -6,6 +6,9 @@ A hands-on demo of a production-grade streaming ETL pipeline using Databricks De
 
 ## Repository Structure
 
+- **queries.sql**  
+  Contains ad hoc SQL queries to explore and validate the Delta Live Tables (DLT) output across all layers
+
 - **00_data_generator.ipynb**  
   Defines `generate_stream()`: continuously emits synthetic sensor readings into Delta paths, one minute apart, with a small random timestamp lag to mimic real-world delays.
 
